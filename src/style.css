@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/* class added with javascript */
+
+.morning {
+    background: url('../assets/morning.jpg') no-repeat bottom center scroll;
+    
+} 
+
+ .afternoon {
+    background: url('../assets/afternoon.jpg') no-repeat bottom center scroll;
+   
+}
+
+
+.night{
+    background: url('../assets/night.jpg') no-repeat bottom center scroll;
+    
+} 
+
+/*---------------------------------*/
+
+ .content {
+    margin: 8rem 0;
+    padding: 5rem;
+} 
+
+.content p {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+.content .hour {
+    font-size: 70px;
+}
+
+.content:last-child {
+    font-size: 28px;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+/* mobile devices */
+
+@media(max-width: 500px) {
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .content .hour {
+        font-size: 48px;
+    }
+    
+    body {
+        overflow:hidden;
+    }
+
+    .mobile-morning {
+      background: url('../assets/mobile/morning.jpg') no-repeat bottom center scroll;
+    }
+
+    .mobile-afternoon {
+        background: url('../assets/mobile/afternoon.jpg') no-repeat bottom center scroll;
+    }
+
+    .mobile-night {
+        background: url('../assets/mobile/night.jpg') no-repeat bottom center scroll;   
+    }
+}
