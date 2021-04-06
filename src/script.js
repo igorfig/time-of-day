@@ -107,10 +107,10 @@ function showHoursOnScreen(){
     const formatHours = hour < 10 ? 0 : ""; 
     const formatMinutes = minutes < 10 ? 0 : ""; 
     const formatSeconds = seconds < 10 ? 0 : ""; 
-
-
-    const msg = document.querySelector('p')
-    msg.innerHTML = `${formatHours}${hour}:${formatMinutes}${minutes}:${formatSeconds}${seconds}`
+    
+    document.querySelector('p').innerHTML = `
+        ${formatHours}${hour}:${formatMinutes}${minutes}:${formatSeconds}${seconds}
+    `
 }
 
 const interval = window.setInterval(() => showHoursOnScreen(), 1000);
